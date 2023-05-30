@@ -1,5 +1,5 @@
 {
-    "name": "spanjaan/bloghub-plugin",
+    "name": "spanjaan/wn-bloghub-plugin",
     "type": "winter-plugin",
     "version": "1.0.0",
     "description": "Extends Winter's Blog extension with tag, comment, additional archives and more.",
