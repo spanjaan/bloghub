@@ -1,0 +1,23 @@
+<div class="author-info">
+    <h2>{{ author.getDisplayName() }}</h2>
+    <p>{{ author.getAboutMe() }}</p>
+    <p>{{ author.getCount() }} posts</p>
+    <a href="{{ author.getUrl() }}">View all posts by {{ author.getDisplayName() }}</a>
+</div>
+
+<!-- bloghub_author.htm -->
+
+{% if author %}
+<div class="bloghub-author">
+    <div class="bloghub-author-image">
+        <img src="{{ author.getAvatar() }}" class="rounded-circle" width="60" alt="{{ author.getDisplayName() }}">
+    </div>
+    <div class="bloghub-author-details">
+        <h3>{{ author.getDisplayName() }}</h3>
+        <p class="bloghub-author-bio">{{ author.getAboutMe() }}</p>
+        <p class="bloghub-author-count">{{ author.getCount() }} {{ 'winter.blog::lang.post.posts'|trans }}</p>
+        <a href="{{ author.getUrl() }}" class="bloghub-author-link">{{ 'spanjaan.bloghub::lang.author.posts_by'|trans }}
+            {{ author.getDisplayName() }}</a>
+    </div>
+</div>
+{% endif %}
