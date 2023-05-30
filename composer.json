@@ -16,13 +16,6 @@
             "role": "Developer"
         }
     ],
-    "repositories": [
-    {
-        "type": "vcs",
-        "url": "https://github.com/spanjaan/bloghub"
-    }
-    ],
-
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
